@@ -58,5 +58,5 @@ def delete_task(task_id):
     tasks = [t for t in tasks if t['id'] != task_id]
     return jsonify({'message': 'Task deleted'})
 
-
-
+if __name__ == '__main__':
+    app.run(debug=True)
